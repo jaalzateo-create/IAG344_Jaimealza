@@ -116,10 +116,122 @@ alt+shif+rayita abajo: para duplicar la linea
 # 👌Entrenamiento
 | patron | significado    |
 | ------ | -------------- |
-| `\d `  | Digito         | para visualizar git
+| `\d `  | Digito         | para visualizar git |
 | `\D `  | No Digito      |
 | `\W `  | Letra o numero |
 | `\+ `  | uno o mas      |
 | `\* `  | cero o mas     |
 ``
 ```
+# deactive: desactivar entorno virtual
+```
+html
+ se utiliza para que la pagina vaya a link que nosotros le ingresamos el usuario solo ve unal githut jaime y youtube
+<header class="cabecera">
+        <h1>Mi sitio</h1>
+
+        <!-- Menu de Navegacion --> se utiliza para que la pagina vaya a link que nosotros le ingresamos el usuario solo ve unal githut jaime y youtube
+         <nav>
+            <a href="https://unal.edu.co/">unal</a>
+            <a href="https://github.com/jaalzateo-create/IAG344_Jaimealza">githut jaime</a>
+            <a href="https://youtube.com/">😊youtube</a>
+         </nav>
+        
+
+    </header>
+```
+# comentario alt+shif+A: se utiliza para comentario
+# ordenar alt+shif+F: se utiliza para ordenar la plataforma.
+alt + shift + a: para sacar el comentario
+alt + shift + flecha: para duplicar
+li*2 multiplica la etiqueta
+<ol>: Lista ordenada
+<ul>: Lista no ordenada
+ctrl + shift + k: para eliminar una línea 
+div.container y espacio o tab: autocompleta la etiqueta
+alt+shift+f: organizar la tabla y organiza la identación
+alt+ctrl+shift+flecha haacia abajo: selecciona varias líneas 
+```
+# comandos CDM
+| comando | Descripcion          |
+| ------- | -------------------- |
+| `cd`    | cambio de directorio |
+| `cd..`    | cambio de directorio |
+| `dir`   | listar               |
+```
+
+```
+como se declara una funcion python: def y sub recoje todo lo que no utilizo
+documento1="cc.75.055.60"
+
+def clean_id(documento):
+    return re.sub(r"\D","",documento)
+print(clean_id(documento1)) este codigo sirve para sacar solamente los numeros del documento 1 y las que me coloque lo que esta dentro de las comillas"".
+este es el resultado 7505560
+```
+SE utiliza para la logica del negocio
+import re
+def clean_id(value):
+    # elimina caracteres no numéricos de un documento
+    if value is None:
+        return ""
+    return re.sub(r"\D", "",str(value))
+
+```
+que se le dice al programa que busque el archivo proccessor y me traiga lo que hay en Clean id
+from proccessor import clean_id
+```
+pip install pytest: se utiliza para instalar la libreria Pytest
+pip list: se utiliza para verificar las librerias.
+pytest: se utiliza para verificar la version de la biblioteca.
+python.exe -m pip install --uograte: aparece si no se ha actualizado la libreria a la version que deberia
+ctrl+shif+P es para sacar el comando de la parte de arriba despues escribe configure user snippets y selecciona python.
+y escribe el siguiente codigo.
+{
+	"separador de seccion python": {
+		"prefix": "sep",
+		"body": [
+			"# =====================",
+			"# ${1: PUNTO DE ENTRADA}",
+			"# ====================="
+				],
+				"description": "Crea un separador de secciones en python"
+	}
+}
+coloco sep tabulador en donde quiere que este
+ESte codigo se utiliza para marcar mi codigo personal es un snipper
+Un snippet es un fragmento pequeño de código que se usa para realizar una tarea específica.
+
+En Python (y en programación en general), un snippet es:
+
+Un pedacito de código
+
+Normalmente reutilizable
+
+Que resuelve algo concreto (imprimir algo, leer datos, hacer un cálculo, validar información, etc.)
+
+```
+ pip freeze > requirements.txt me muestra las librerias que se necesitan
+ pin install openpyxl se instala la libreria openpyxl
+
+ ```
+
+ ```
+ #Recorrer todas las filas desde la fila 2 hasta la ultima fila con datos
+    for row in range(2,ws.max_row+1):
+        ws[f"D{row}"] = clean_id(ws[f"A{row}"].value): esto me guarda lo de la columna A pero que me limpie la columna A en la D del libro de Excel
+```
+```
+Html
+container para agruparlas en un sola pantalla
+row: sirve para dividir la pantalla en 12 columnas
+ctrl+alt+shit flecha hacia abajo para copiar en varias lineas
+```
+
+```
+filedialog as flg se utiliza como alias
+crear un .exe
+1. Instalar librerias
+   `pip install pyinstaller`
+2 crear el .exe
+   `pyinstaller --onefile --windowed app.py`

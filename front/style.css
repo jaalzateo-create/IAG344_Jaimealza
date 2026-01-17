@@ -1,0 +1,37 @@
+/* estilo para toda la web */
+*{
+    margin: 0; /* quitar margenes por defecto */
+    padding: 0; /* quita rellenos por */p
+}
+
+
+/* estilo header */
+
+.header{
+    background: #a498f6;/* color de fondo en Hexadecimal */
+    color: white;/* color de la letra */
+    padding:16px 24px;/* espacio interno */
+    display: flex; /* logo y menu en fila */
+    align-items: center;/* elementos en fila */
+    justify-content: space-between; /* los ubica a ka izquierda */
+    
+}
+/* estilo titulo */
+.nombre{
+    font-size: 22px;/* tamaño en pixeles */
+}
+
+/* Enlaces del menu */
+.nav-link{
+    color: white;
+    text-decoration: none;/* quita subrayado */
+    margin-left: 12px;/* espacio entre link */
+    opacity: 0,85;/* color un poco mas suave */
+}
+.nav-link:hover{
+    opacity: 1;/*  */
+    text-decoration: underline;/* para subrayar los link */
+    color: rgb (243,133,160);
+    background-color: rgb(240, 232, 233);
+    border-radius: 5px;/* para bordear el cuadro del link */
+}

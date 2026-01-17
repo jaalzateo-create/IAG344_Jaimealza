@@ -1,0 +1,18 @@
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* color del fondo de izquierda */
+.bg-primary {background-color: #2c3e50 !important}
+/* de esta forma reduzco el tamaño de la fotografia */
+.imagen{
+    max-width: 20%;
+}
+/* opacidad barra progreso */
+.progress{
+    background-color:  rgba(255, 255, 255, 0.2);
+}
+/* cambio color texto col dere */
+.text-primary {
+    color: #3498db !important;
+}
