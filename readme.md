@@ -235,3 +235,12 @@ crear un .exe
    `pip install pyinstaller`
 2 crear el .exe
    `pyinstaller --onefile --windowed app.py`
+```
+
+```
+# este codigo nos une Mision1 con Mision2 estos son los archivos que voy a pegar
+# primero creo un archivo app en Mision3
+# Despues pego lo que hay en el archivo app
+from ui import iniciar_app
+if __name__ == "__main__":
+    iniciar_app()
