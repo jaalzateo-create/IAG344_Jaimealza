@@ -1,4 +1,3 @@
-
 # ia_interpreter.py
 # Simula una IA básica usando reglas y expresiones regulares
 

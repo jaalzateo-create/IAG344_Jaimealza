@@ -20,13 +20,13 @@ git remote add origin https://github.com/jaalzateo-create/IAG344_Jaimealza.git
 v2
 cd personal
 git status
-git remote
+git remote:
 git push
 git add .
-git status
-git commit -m "IAG344 V2"
-git add .
-Git push
+git status: para mirar que esta pendiente por actualizar
+git commit -m "IAG344 V2": esto es para actualizar la informacion pero se le debe dar una version diferente
+git add . :agregar los archivos
+Git push: esto se utiliza para subir los archivos
 ```
 html
 <!DOCTYPE html>
@@ -244,3 +244,32 @@ crear un .exe
 from ui import iniciar_app
 if __name__ == "__main__":
     iniciar_app()
+python main.py para correr programa
+se señala primero y despues busca lo señalo Ctrl+H 
+```
+
+```
+## 😁 Comandos Panda
+
+#LIBRERIAS
+--
+import pandas as pd #pip install pandas
+--
+df =pd.read_csv("./dataset.csv")
+df.head(5)
+--
+df.describe()
+--
+df["favorites"]
+--
+df.loc[0:2]
+--
+df.loc[[0,1,7]]
+--
+df.loc[[1,7],["favorites"]]
+--
+df[df["favorites"]>400]
+--
+df[(df["favorites"]>400)&(df["mentions"]>20)]
+
+```
