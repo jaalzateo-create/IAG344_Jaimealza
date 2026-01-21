@@ -17,7 +17,7 @@ def process_excel(path):
     # guarde los cambios en el mismo archivo
     wb.save(path)
     
-def ejecutar_accion(instruccion.path):
+def ejecutar_accion(instruccion,path):
     # Abre el archivo de ejemplo
     wb = load_workbook(path)
     ws = wb.active
