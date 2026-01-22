@@ -15,4 +15,9 @@
 /* cambio color texto col dere */
 .text-primary {
     color: #3498db !important;
+    
+}
+.card {
+   transform: translateY(-15px);
+   box-shadow: 0 10px 20px rgba(113, 29, 29, 0.1);
 }
