@@ -1,8 +1,14 @@
-#scikit-learn esta librería se utiliza para crear modelos de aprendizaje automático.
+import os
+import pickle
 # esta libreria convierte texto en vectores
 from sklearn.feature_extraction.text import CountVectorizer
 # esta libreria se encarga de buscar las relacion con las respuestas
 from sklearn.naive_bayes import MultinomialNB
+
+MODEL_DIR="models"
+MODEL_PATH=os.path.join(MODEL_DIR,"model.pkl")
+VECTORIZER_PATH=os.path.join(MODEL_DIR,"vectorizer.pkl")
+ANSWER_PATH=os.path.join(MODEL_DIR,"answers.pkl")
 
 # funcion de entrenamiento preguntas y respuestas
 def build_and_train_model(Train_pairs):
@@ -26,6 +32,11 @@ def build_and_train_model(Train_pairs):
     model = MultinomialNB()
     #entrenamos el modelo
     model.fit(x,y)
+    # Crear carpeta para guardar el modelo si no existe
+    os.makedirs(MODEL_DIR, exist_ok=True)
+    #guardar los objetos entrenados
+    with open(MODEL_DIR, "wb") as f:
+        pickle.dump(model, f)
     return model, vectorizer, unique_answers
 # funcion para predecir la respuesta
 def predict_answer(model, vectorizer, unique_answers, user_text):

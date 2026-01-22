@@ -11,3 +11,5 @@ PS C:\Guia talento tech\personal\Mision3> venv3.13\scripts\activate
 from sklearn.feature_extraction.text import CountVectorizer: estas librerias convierte el texto en un vector.
 from sklearn.naive_bayes import MultinomialNB: libreria entiende un texto y libreria exclusiva de inteligencia artificial.
  user_input = input("Tú: ").strip(): la funcion strip elimina los espacios adelante y atras del texto
+
+python chatbot_sp.py: con esta funcion en python se corre el chatbot para generar lo que se necesita
